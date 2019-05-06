@@ -6,6 +6,8 @@ body{
   font-family: "Hannari";
 }
 
+/* navbar */
+
 
 
 .navbar{
@@ -40,12 +42,14 @@ body{
   top:7px;
 }
 
-
-
 button:focus {
   outline: none;
   
 }
+/* end navbar */
+
+
+/* carousel */
 
 .carousel-caption{
   color:#ffffff;
@@ -82,6 +86,10 @@ button:focus {
   color: #663a15;
 }
 
+/* end carousel */
+
+
+/* section1 */
 
 
 .section1{
@@ -91,28 +99,139 @@ button:focus {
 
 .section1-inner{
   max-width: 1140px;
+  margin: 0 auto;
 }
+
+hr{
+  border:none;
+  border-top:dashed 1px #b8b8b8;
+  height:1px;
+  color:#FFFFFF;
+  }
 
 .heading{
   margin-top: 40px;
+  padding-bottom: 10px;
   font-size: 1.7rem;
-  
+  border-bottom: 1px dotted #b8b8b8;
+  font-family: "M PLUS Rounded 1c";
+
 }
 
 
 .btn{
-  margin-top: 1.5rem;
+  margin-top: .5rem;
   background-color:#5c6896 !important;
   border-radius:0;
   border: #5c6896;
   transition: all 0.3s ease;
   
 }
-
-
-.news a{
+.news-md a{
   padding: 20px 50px;
+  margin-top: 100px;
 }
+
+.news-sm a{
+  padding: 10px 25px;
+  margin-top: 30px;
+
+}
+
+.topics{
+  margin-top: .5rem;
+  
+}
+
+.scroll-list{
+  list-style-type: none;
+  text-align: center;
+}
+
+.scroll-list li a{
+  text-decoration: none;
+  color: #333333;
+}
+
+
+
+.scroll-list .title{
+  font-size: 1rem;
+  font-family: "M PLUS Rounded 1c";
+}
+
+.scroll-list li{
+  display: block;
+}
+
+.scroll-list .category {
+  display: inline-block;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  padding: 3px 3px;
+  line-height: 1rem;
+  width: 20%;
+  margin:0 1rem;
+  font-family: "M PLUS Rounded 1c";
+
+}
+
+.newopen{
+  background-color:#d7003a;
+}
+
+.service{
+  background-color:#3e9920;}
+
+.column2{
+  background-color: #333333;
+}
+
+.menu{
+  background-color: #1e2b58;
+}
+
+.info{
+  background-color:#f0e68c;
+}
+
+/* end section1 */
+
+/* social */
+.social{
+  font-size: 3rem;
+}
+
+.social a{
+  padding:1rem;
+  border: 2px solid #b8b8b8;
+  
+}
+
+/* end social */
+
+/* footer */
+footer{
+  background-color: #1e2b58;
+  height: 70px;
+  color: white;
+}
+
+/* end footer */
+
+
+
+
+
+
+
+
+
+
+/* css hover */
 
 /* Sweep To Bottom */
 .hvr-sweep-to-bottom {
@@ -157,6 +276,23 @@ button:focus {
 
 .fa-chevron-circle-right{
   margin-right: 7px;
+}
+
+/* end css hover */
+
+/* media */
+
+@media(max-width:768px){
+  .news-md{
+    display: none;
+  }
+
+}
+
+@media(min-width:768px){
+  .news-sm{
+    display: none;
+  }
 }
 
 
