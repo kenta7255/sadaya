@@ -4,6 +4,7 @@
 
 body{
   font-family: "Hannari";
+  
 }
 
 /* navbar */
@@ -33,6 +34,7 @@ body{
   margin-right: .5rem;
   margin-bottom: .6rem;
   margin-left: .4rem;
+  margin-top: 1rem;
   
 
 }
@@ -134,8 +136,7 @@ hr{
 
 .news-sm a{
   padding: 10px 25px;
-  margin-top: 30px;
-
+  margin-right: 10px;
 }
 
 .topics{
@@ -198,26 +199,123 @@ hr{
   background-color:#f0e68c;
 }
 
+.sns{
+  background-color: #bb0000;
+}
+
 /* end section1 */
 
+/* section2 */
+.section2 img{
+  position: relative;
+}
+
+.section2 img:hover{
+  opacity: 0.7;
+}
+
+.text-comment{
+  position: absolute;
+  top: 75%;
+  left: 10%;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.text-comment-sm{
+  position: absolute;
+  top: 75%;
+  left: 10%;
+  color: #fff;
+  font-size: 1rem;
+}
+
+
+/* end section2 */
+
+/* section3 */
+
+.section3{
+  position: relative;
+}
+
+.recruit-comment1{
+  position: absolute;
+  top: 0%;
+  left:68%;
+}
+
+.recruit-comment1,.recruit-comment2{
+  background-color:#1e2b58;
+  
+  width: 120px;
+  height: 120px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+/* end section3 */
+
 /* social */
-.social{
+.social a{
+  display: inline-block;
+  text-decoration: none;
+  width:20%;
+  box-sizing: border-box;
+  text-decoration: none;
+  color:#333333 ;
+}
+
+
+.social-title{
+  font-size: 1rem;
+}
+
+.social-icon{
   font-size: 3rem;
 }
 
-.social a{
-  padding:1rem;
-  border: 2px solid #b8b8b8;
-  
+.fa-window-restore{
+  font-size: .5rem;
 }
+
+.fa-facebook{
+  color:#3b5998;
+}
+
+
+.fa-twitter{
+  color:#00aced;
+}
+
+
+.fa-instagram{
+  color:#517fa4
+}
+
+.fa-youtube{
+  color:#bb0000;
+}
+
+
 
 /* end social */
 
 /* footer */
 footer{
   background-color: #1e2b58;
-  height: 70px;
+  height: 125px;
   color: white;
+  font-size: .8rem;
+  
+}
+
+.footer-logo{
+  margin-right: 5px;
 }
 
 /* end footer */
@@ -273,6 +371,47 @@ footer{
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
+
+.hvr-sweep-to-bottom2 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-bottom2:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-bottom2:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
+  opacity: 0.5;
+}
+.hvr-sweep-to-bottom2:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
 
 .fa-chevron-circle-right{
   margin-right: 7px;
