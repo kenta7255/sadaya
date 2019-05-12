@@ -24,7 +24,9 @@ body{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-
+.logo-sm{
+  display: none;
+}
 
 
 .nav-link{
@@ -67,26 +69,21 @@ button:focus {
 .carousel-caption h3{
   font-size: 3.2rem;
   border-bottom: 3px solid #fff;
-  
+
 }
 
 .carousel-caption p{
   font-size: 1.4rem;
 }
 
-
-.carry:hover{
-  color: #D68E31;
-  cursor: pointer;
+.carousel-caption:hover{
+  cursor:pointer;
 }
 
-.pasta:hover{
-  color: #351e2e;
-}
 
-.potofu:hover{
-  color: #663a15;
-}
+
+
+
 
 /* end carousel */
 
@@ -214,6 +211,10 @@ hr{
   opacity: 0.7;
 }
 
+.fa-chevron-circle-right {
+  margin-right: 0 !important;
+}
+
 .text-comment{
   position: absolute;
   top: 75%;
@@ -235,30 +236,105 @@ hr{
 
 /* section3 */
 
-.section3{
+
+.a-1{
   position: relative;
 }
 
-.recruit-comment1{
-  position: absolute;
-  top: 0%;
-  left:68%;
+.a-2{
+  position: relative;
 }
 
+.section3 a:hover{
+  opacity: 0.7;
+}
+
+.recruit1{
+  position: relative;
+}
+.recruit2{
+  position: relative;
+}
+
+
+
+
+
+.recruit-comment1{
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  
+}
+
+.recruit-comment1 p{
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+
+.recruit-comment2{
+  position: absolute;
+  top: 0%;
+  
+  
+}
+
+.recruit-comment2 p{
+  margin-top: 20px;
+  line-height: 40px;
+}
+
+
 .recruit-comment1,.recruit-comment2{
-  background-color:#1e2b58;
+  background-color:rgba(30,43,88,0.8);
   
   width: 120px;
   height: 120px;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
+/* concept */
+
+.sadaya-concept{
+  background-size: cover;
+  position: relative;
+}
+
+
+
+.concept-btn{
+  position: absolute;
+  bottom: 10%;
+  left: 3%;
+}
+
+.concept-btn a{
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+
+/* end concept */
+
+.card{
+  border:none;
+}
+
+.card-text{
+  height: 80px;
+}
 
 
 
 
 /* end section3 */
+
+
+
+
 
 /* social */
 .social a{
@@ -421,12 +497,186 @@ footer{
 
 /* media */
 
-@media(max-width:768px){
+
+@media(max-width:544px){
+  .nav-link{
+    font-weight: bold;
+    font-size: .8rem;
+    margin-right: .5rem;
+    margin-bottom: .3rem;
+    margin-left: .4rem;
+    margin-top: .6rem;
+    
+  
+  }
+
   .news-md{
     display: none;
   }
 
+  .logo-sm{
+    display:block;
+  }
+
+  .logo-md{
+    display: none;
+  }
+  
+
+  .carousel-caption h3{
+    font-size: 1.4rem;
+    border-bottom: 2px solid #fff;
+  
+  }
+
+  .carousel-caption p{
+    font-size: 1rem;
+  }
+
+  .heading{
+    font-size: 1.3rem;
+  }
+
+  .btn{
+    font-size: 1rem;
+  }
+
+  .scroll-list .title{
+    font-size: .8rem;
+  }
+  
+  
+  .scroll-list .category {
+    font-size: .8rem;
+    padding: 2px 2px;
+  
+  }
+
+  .navbar-toggler{
+    font-size: .7rem;
+  }
+
+  .text-comment{
+    font-size: 1rem;
+  }
+  
+  .text-comment-sm{
+    font-size: 1rem;
+  }
+  .social-icon{
+    font-size: 2rem;
+  }
+
+
+
+  .social-title{
+    margin: 0;
+  }
+
+  .concept-btn{
+    bottom: 10%;
+    left: 5%;
+  }
+  
+
+  .concept-btn a{
+    font-size: .8rem;
+    text-decoration: none;
+    padding: 3px;
+  }
+
+
+
+  .social-title{
+    width: 25%;
+  }
+
+  
+  .social p{
+    font-size: .5rem;
+  }  
+
+  .card-title{
+    font-size: 1.3rem;
+    height: 20px;
+  }
+
+  .card-text{
+    font-size: .8rem;
+    height: 50px;
+  }
+
+  .recruit-btn{
+    font-size: .8rem;
+    text-decoration: none;
+    margin-top: 5rem;
+  }
+
+  .recruit-btn:hover{
+    text-decoration: none;
+  }
+
+  
+  
+
+  
 }
+
+@media(min-width:544px) and (max-width:768px){
+  
+
+
+  .carousel-caption h3{
+    font-size: 2.2rem;
+    border-bottom: 2px solid #fff;
+  
+  }
+
+  .carousel-caption p{
+    font-size: 1.2rem;
+  }
+
+  .btn{
+    font-size: 1.2rem;
+  }
+
+  .text-comment{
+    font-size: 1.3rem;
+  }
+
+  .text-comment-sm{
+    font-size: 1.3rem;
+  }
+
+  .card-title{
+    font-size: 1.3rem;
+  }
+  
+  .card-text{
+    font-size: 1rem;
+    height: 80px;
+  }
+
+
+  .concept-btn a{
+    font-size: 1rem;
+  }
+
+  .news-md{
+    display: none;
+  }
+
+  
+  
+
+
+
+
+
+
+
+}
+
 
 @media(min-width:768px){
   .news-sm{
@@ -434,6 +684,16 @@ footer{
   }
 }
 
+@media(min-width:992px){
+  .text-comment{
+    font-size: 1rem;
+  }
+
+  .text-comment-sm{
+    font-size: 1rem;
+  }
+
+}
 
 
 
